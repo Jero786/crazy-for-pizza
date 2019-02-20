@@ -1,0 +1,28 @@
+@import 'commons/styles/style';
+
+
+.app-container {
+  margin-top: $height-header;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &:before {
+    content: '';
+    position: fixed;
+    background: url("./assets/images/bg.png");
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__body {
+    align-self: flex-start;
+    padding-top: 3em;
+  }
+
+}

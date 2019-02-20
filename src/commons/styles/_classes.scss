@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'mixins';
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.bg-white {
+  background-color: $white-transparent;
+}
+
+.bg-gray {
+  background-color: $gray-transparent;
+}
+
+.card {
+  box-shadow: 0 3px 5px 0 gray;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.max-width-box {
+  max-width: 700px;
+}
+
+.card-header {
+  background-color: $white-transparent;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 4em;
+  font-weight: 100;
+  color: black;
+  padding: .5em;
+  text-align: left;
+}
+
+.card-footer {
+  background-color: $gray-transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 10;
+  font-size: 2em;
+  padding: .7em;
+}
+
+.xs-visible {
+  @include bp(xs) {
+    display: initial;
+  }
+}

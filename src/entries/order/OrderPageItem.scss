@@ -1,0 +1,86 @@
+@import '../../commons/styles/style';
+
+.order-page-item {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    flex-grow: 2;
+
+    &-title {
+      font-weight: 300;
+    }
+
+    &-description {
+      font-size: 0.8em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+    }
+
+    &-order {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      button {
+        min-width: 155px;
+      }
+
+      &-price {
+        padding-right: 1em;
+        align-self: center;
+
+        font-size: 0.8em;
+
+        &-label {
+          font-weight: 300;
+        }
+        &-value {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-amount {
+      button {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &-toppings {
+      padding-bottom: 1em;
+    }
+  }
+
+  &__price {
+    &-label {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    &-value {
+      font-weight: 500;
+      font-size: 1.5em;
+      padding-top: 0.5em;
+    }
+  }
+
+  &__wrapper {
+    margin-top: $height-header;
+  }
+
+  .mdl-textfield {
+    width: 70px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.cp-message-error {
+  padding-top: 1em;
+  color: $red;
+  font-weight: 500;
+  font-size: .8em;
+}

@@ -1,0 +1,67 @@
+@import '../../../commons/styles/style';
+
+.list-item {
+  font-weight: 100;
+
+  display: flex;
+  font-size: 20px;
+  margin-top: 1em;
+  max-width: 600px;
+
+  &__picture {
+    display: flex;
+    position: relative;
+    min-width: 200px;
+
+    img {
+      align-self: center;
+      hight: 200px;
+      width: 200px;
+    }
+
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  &__content {
+    flex-grow: 2;
+    padding: 1em;
+
+
+    &-title {
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    &-description {
+      font-size: 0.8em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    &-order {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      button {
+        min-width: 155px;
+      }
+
+      &-price {
+        padding-right: 1em;
+        align-self: center;
+
+        font-size: .9em;
+
+        &-label {
+          font-weight: 300;
+        }
+
+        &-value {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+export const ADD_ORDER_TO_CART = 'ADD_ORDER_TO_CART';
+export const REMOVE_ORDER_TO_CART = 'REMOVE_ORDER_TO_CART';

@@ -1,0 +1,31 @@
+.home-page {
+
+  &__footer {
+
+    &-price {
+
+      &-label {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding-bottom: 1em;
+      }
+
+      &-value {
+        font-size: 1.5em;
+        font-weight: 300;
+      }
+    }
+
+    &-button {
+      padding-top: 1em;
+
+      .material-icons {
+        padding-left: .5em;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

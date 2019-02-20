@@ -1,0 +1,148 @@
+@import '../../commons/styles/style';
+
+.cart-item {
+  margin-top: $height-header;
+  font-weight: 100;
+  display: flex;
+  font-size: 20px;
+  min-width: $min-width-box;
+
+  &__picture {
+    display: flex;
+    position: relative;
+
+    img {
+      align-self: center;
+      hight: 200px;
+      width: 200px;
+    }
+
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  &__content {
+    flex-grow: 2;
+    padding: 1em;
+
+    &-title {
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+    &-description {
+      font-size: .8em;
+      padding: 1em 0;
+    }
+
+    &-cart {
+      &-price {
+        font-weight: 300;
+        padding: 1em 0;
+
+        &-label {
+
+        }
+        &-value {
+
+          padding-left: .5em;
+          font-weight: 500;
+        }
+      }
+
+    }
+  }
+
+  &-description {
+    font-size: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    color: $red;
+  }
+
+  &-order {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    button {
+      min-width: 155px;
+    }
+
+    &-price {
+      padding-right: 1em;
+      align-self: center;
+
+      font-size: 0.9em;
+
+      &-label {
+        font-weight: 500;
+      }
+      &-value {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__fixed-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 10;
+
+    &-wrapper {
+
+      min-width: $min-width-box;
+      display: flex;
+
+      &-offset {
+        width: 45%;
+      }
+
+      &-content {
+        width: 63%;
+      }
+
+    }
+
+    .material-icons {
+    }
+
+    button {
+      margin-top: 1.5em;
+    }
+  }
+
+  &__price {
+    &-label {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    &-value {
+      font-weight: 500;
+      font-size: 1.5em;
+      padding-top: 0.5em;
+    }
+  }
+
+  &__wrapper {
+    margin-top: $height-header;
+  }
+
+}
+
+.empty-card {
+  font-size: 4em;
+  color: $red;
+  padding: 1em;
+  opacity: .9;
+  border-radius: 10px
+}

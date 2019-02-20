@@ -1,0 +1,48 @@
+@import '../../commons/styles/style';
+
+.order-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+
+  &__bg {
+    background-color: $red;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__title {
+    padding: .5em 0 .5em 0;
+    text-align: center;
+    font-size: 5.5em;
+    font-weight: 100;
+  }
+
+  &__logo {
+    padding-bottom: 2em 0;
+    height: 200px;
+  }
+
+  &__icon {
+    position: relative;
+    background-color: $white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+    .material-icons {
+      color: $red;
+      z-index: 5;
+      font-size: 100px;
+      align-self: center;
+    }
+  }
+}

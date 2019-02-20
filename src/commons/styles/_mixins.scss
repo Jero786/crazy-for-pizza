@@ -1,0 +1,25 @@
+@mixin bp($min: 0, $max: 0) {
+  $type: type-of($min);
+
+  @if $type == string {
+    @if $min == xxs {
+      @media (max-width: 605px) { @content; }
+    }
+
+    @if $min == xs {
+      @media (max-width: 767px) { @content; }       // Mobile Devices
+    }
+
+    @else if $min == sm {
+      @media (min-width: 768px) and (max-width: 992px) { @content; }       // Tablet Devices
+    }
+
+    @else if $min == md {
+      @media (min-width: 993px) and (max-width: 1199px) { @content; }       // Desktops
+    }
+
+    @else if $min == lg {
+      @media (min-width: 1200px) { @content; }       // Desktops Large
+    }
+  }
+}
